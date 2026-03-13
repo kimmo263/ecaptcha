@@ -1,10 +1,22 @@
-# ECaptcha 前端 SDK
+<div align="center">
 
-轻量级人机验证前端 SDK，支持图片验证码、滑动拼图、无感验证。
+# 🛡️ ECaptcha Frontend SDK
 
-## 快速接入
+**轻量级人机验证前端 SDK**
 
-### 方式一：CDN 引入
+[![npm version](https://img.shields.io/npm/v/@ectrack/ecaptcha.svg)](https://www.npmjs.com/package/@ectrack/ecaptcha)
+[![bundle size](https://img.shields.io/badge/gzip-~8kb-brightgreen)](https://bundlephobia.com/package/@ectrack/ecaptcha)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)](https://www.typescriptlang.org/)
+
+</div>
+
+---
+
+支持图片验证码、滑动拼图、无感验证，兼容 React / Vue / 原生 JS。
+
+## 📦 安装
+
+### 方式一：CDN 引入（推荐快速体验）
 
 ```html
 <script src="https://your-domain/ecaptcha/sdk/ecaptcha.min.js"></script>
@@ -29,12 +41,14 @@
 </script>
 ```
 
-### 方式二：NPM 安装
+### 方式二：NPM 安装（推荐生产使用）
 
 ```bash
 npm install @ectrack/ecaptcha
 # 或
 yarn add @ectrack/ecaptcha
+# 或
+pnpm add @ectrack/ecaptcha
 ```
 
 ```typescript
@@ -57,7 +71,7 @@ const token = await ECaptcha.verify('behavior');
 const token = await ECaptcha.smart();
 ```
 
-## API
+## 📖 API
 
 ### ECaptcha.init(options)
 
@@ -106,7 +120,7 @@ const token = await ECaptcha.smart();
 const isValid = await ECaptcha.validateToken(token);
 ```
 
-## 完整示例
+## 💡 完整示例
 
 ### 登录页面
 
@@ -254,7 +268,7 @@ async function sendCode() {
 </script>
 ```
 
-## 后端集成
+## 🔗 后端集成
 
 后端需要提供以下接口：
 
@@ -266,7 +280,7 @@ async function sendCode() {
 
 详见后端 SDK 文档：[pkg/ecaptcha/README.md](../README.md)
 
-## 自定义样式
+## 🎨 自定义样式
 
 SDK 使用 CSS 类名，可通过覆盖样式自定义外观：
 
@@ -287,11 +301,17 @@ SDK 使用 CSS 类名，可通过覆盖样式自定义外观：
 .ecaptcha-slider-btn { background: #4a90d9; }
 ```
 
-## 浏览器支持
+## 🌐 浏览器支持
 
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
-- iOS Safari 12+
-- Android Chrome 60+
+| 浏览器 | 最低版本 |
+|--------|----------|
+| Chrome | 60+ |
+| Firefox | 55+ |
+| Safari | 12+ |
+| Edge | 79+ |
+| iOS Safari | 12+ |
+| Android Chrome | 60+ |
+
+## 📄 License
+
+[MIT License](../LICENSE)
