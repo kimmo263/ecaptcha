@@ -1,0 +1,27 @@
+{
+  "name": "@ectrack/ecaptcha",
+  "version": "1.0.0",
+  "description": "ECaptcha - 人机验证前端 SDK",
+  "main": "ecaptcha.min.js",
+  "types": "ecaptcha.d.ts",
+  "files": [
+    "ecaptcha.min.js",
+    "ecaptcha.d.ts"
+  ],
+  "scripts": {
+    "build": "echo 'No build required'"
+  },
+  "keywords": [
+    "captcha",
+    "verification",
+    "slider",
+    "image-captcha",
+    "behavior-analysis"
+  ],
+  "author": "EcTrack Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ectrack/ecaptcha"
+  }
+}
